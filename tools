@@ -1,0 +1,40 @@
+#!/usr/bin/bash
+clear
+echo "1. Copy files to the directory selected."
+echo "2. Move files to the directory selected."
+echo ""
+echo "Tool:"
+read tool
+echo ""
+
+
+PWD=$(pwd)
+cd "$path"
+
+if [[ "$tool" == "1" || "$tool" == "2" ]];
+then
+    echo "Extension to find:"
+    read extension
+    echo ""
+
+    echo "Extension to replace:"
+    read extensionN
+    echo ""
+
+    echo "Path in this pwd:"
+    read path
+    echo ""
+    echo ""
+    if [[ "$tool" == "1" ]];
+    then
+        for file in $(find . | grep "$extension") do 
+            mv -- "$file" "$(basename -- "$file" .txt).$extensionN"
+        done
+    elif [[ "$tool" == "2" ]];
+    then
+        for file in $(find . | grep "$extension") do 
+            mv -- "$file" "$(basename -- "$file" .txt).$extensionN"
+        done
+    fi
+fi
+cd "$PWD"

@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+echo "Port: "
+read PORT
+kill -9 $(lsof -t -i:$PORT)

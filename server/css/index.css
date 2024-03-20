@@ -1,0 +1,63 @@
+* {
+    font-family: monospace;
+    color: black;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+body {
+    padding: 20px;
+}
+
+.file {
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 0 black;
+    margin: 10px;
+    word-wrap: break-word;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 150ms;
+}
+
+.file:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.error {
+    margin: none;
+    padding: none;
+    text-decoration: black underline;
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    transition: 150ms;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.terminal {
+    box-shadow: 0 30px 30px lightgray;
+    padding: 25px;
+    background: black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.terminal * {
+    font-size: larger;
+    color: white;
+}

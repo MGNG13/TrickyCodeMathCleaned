@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+echo "Your username:"
+read username
+sudo chown -R "$username" ./

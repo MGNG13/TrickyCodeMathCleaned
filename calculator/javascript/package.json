@@ -1,0 +1,11 @@
+{
+    "name": "math3",
+    "private": true,
+    "version": "1.0",
+    "description": "The purpose of our lives is to be happy. -Dalai Lama",
+    "author": "Magnus O. Nørgaard",
+    "dependencies": {
+        "mathjs": "^11.1.0",
+        "prompt-sync": "^4.2.0"
+    }
+}
